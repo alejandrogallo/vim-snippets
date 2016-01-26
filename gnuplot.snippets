@@ -1,0 +1,25 @@
+
+snippet xran "Set xrange" b
+set xrange [$1:$2] $0
+endsnippet
+
+snippet yran "Set yrange" b
+set yrange [$1:$2] $0
+endsnippet
+
+snippet title "set title" b
+set title "$1" $0
+endsnippet
+
+snippet xlab "x label" b
+set xlabel "$1" $0
+endsnippet
+
+snippet ylab "y label" b
+set ylabel "$1" $0
+endsnippet
+
+snippet fit "Fit" b
+${1:f(x)}=${2:exp(-lambda*x)}
+fit $1 ${3:data} using ${4:1:2} via ${5:lambda}
+endsnippet
