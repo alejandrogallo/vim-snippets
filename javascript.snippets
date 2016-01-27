@@ -12,7 +12,11 @@ endsnippet
 #########################
 
 snippet ng-ctrl "AngularController" b
-.Controller("${1:Name}", ["$${2:dep}", function($${3:$2}){
+.controller("${1:Name}", ["$${2:dep}", function($${3:$2}){
 	$0
 }]);
+endsnippet
+
+snippet ng-app "Define angular pp" b
+angular.module("$1"${2:,[]})$0
 endsnippet
